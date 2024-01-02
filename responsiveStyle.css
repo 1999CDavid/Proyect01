@@ -1,0 +1,34 @@
+/*Escritrios grandes*/
+@media (min-width:1200px){
+    #sect1 > .fotoContent > #foto{
+        width: 30vh;
+        height: 40vh;
+
+    } 
+}
+/*Tablets en horizontal y escritorios normales*/
+@media (min-width:768px){
+    #sect1 > .fotoContent > #foto{
+        width: 35vh;
+        height: 45vh;
+
+    }
+} 
+
+/*Móviles en horizontal y tablets en vertical*/
+@media (max-width:1200px){
+    #sect1 > .fotoContent > #foto{
+        width: 35vh;
+        height: 40vh;
+    }
+
+} 
+
+/*Móviles en vertical*/
+@media (max-width:480px){
+    #sect1 > .fotoContent > #foto{
+        width: 35vh;
+        height: 40vh;
+    }
+
+} 

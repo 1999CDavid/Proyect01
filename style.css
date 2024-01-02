@@ -2,19 +2,39 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+  background: rgb(157,209,7);
+  background: linear-gradient(45deg, rgba(157,209,7,1) 90%, rgba(46,215,5,0.1881127450980392) 97%);
+}
+:root{
+  --colorbotom1:rgb(213, 0, 0);
+  --colorbotom2:rgb(0, 100, 90);
 }
 header > h1 {
   font-family: 'Quicksand', sans-serif;
-  
   text-align: center;
+  border-bottom: 1px solid;
+  margin-right: 10vh;
+  margin-left: 10vh;
+  padding-bottom: 1vh;
 }
 
 header > .barraNav{
   display: flex;
-  padding: 6vh;
+  padding: 3vh;
   justify-content: space-between;
 }
+header > .barraNav> a {
+  text-decoration: none;
+  border: 1px solid;
+  border-radius: 12%;
+  padding: 1vh;
+  background-color: var(--colorbotom1);
+}
+
+header > .barraNav> a:hover {
+  background-color: var(--colorbotom2);
+}
+
 body{
   font-family: 'Bebas Neue', sans-serif;
 }
@@ -29,11 +49,13 @@ body{
 }
 
 #sect1 > .fotoContent > #foto{
-  width: 30vh;
-  height: 40vh;
   border-radius: 25%;
   background-size: cover;
+  position: relative;
+  left: 125vh;
+  top: 6vh;
 }
+
 #sect2{
   width: 100%;
   height: 100vh;
@@ -52,8 +74,16 @@ body{
   background-position: center;
   background-size: cover;
 }
-footer{
+#sect4{
+  width: 100%;
+  height: 100vh;
+  margin-top: 12vh;
+}
+
+footer>.contactContent{
   display: flex;
   padding: 4vh;
+  width: 70%;
   justify-content: space-around;
+  border: 1px solid;
 }
