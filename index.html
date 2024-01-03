@@ -36,18 +36,30 @@
             <p>
                 FRONTEND DEVELOPER
             </p>
-            <picture class="fotoContent">
+            <figure class="fotoContent">
                 <img id="foto" src="images/foto.jpg" alt="FotoCV">
-            </picture>
+            </figure>
         </section>
-        <section id="sect2">
+        <section id="sect2" class="sectBck">
             <h2>About me</h2>
         </section>
-        <section id="sect3">
+        <section id="sect3" class="sectBck">
             <h2>My proyects</h2>
         </section>
         <section id="sect4">
             <h2>Freelancer Services</h2>
+            <form>
+                <label for="nombre">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="contact">Contact:</label>
+                <input type="number" id="number" required>
+
+                <label for="mensaje">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
         </section>
     </main>
     <footer id="footer">

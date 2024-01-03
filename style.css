@@ -38,48 +38,62 @@ header > .barraNav> a:hover {
 body{
   font-family: 'Bebas Neue', sans-serif;
 }
+
 #sect1{
   width: 100%;
   height: 100vh;
-  background: url("images/fondo1.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
+  padding: 4vh;
   margin-bottom: 12vh;
+}
+
+#sect1 > .fotoContent {  
+  display:inline-block;
+  border: 1px solid;
+  width: fit-content;
+  border-radius: 25%;
+  padding: 1vh;
 }
 
 #sect1 > .fotoContent > #foto{
   border-radius: 25%;
   background-size: cover;
-  position: relative;
-  left: 125vh;
-  top: 6vh;
 }
 
 #sect2{
   width: 100%;
-  height: 100vh;
+  padding: 4vh;
   background: url("images/fondo2.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   margin-top: 12vh;
+  border-radius: 1%;
 }
+
 #sect3{
   margin-top: 12vh;
   width: 100%;
-  height: 100vh;
+  padding: 4vh;
   background: url("images/fondo3.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  border-radius: 1%;
+}
+.sectBck > h2 {
+  background: none;
 }
 #sect4{
   width: 100%;
   height: 100vh;
   margin-top: 12vh;
+  padding: 4vh;
 }
-
+#sect4 > form{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
 footer>.contactContent{
   display: flex;
   padding: 4vh;
