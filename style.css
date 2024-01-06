@@ -2,41 +2,64 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: rgb(157,209,7);
-  background: linear-gradient(45deg, rgba(157,209,7,1) 90%, rgba(46,215,5,0.1881127450980392) 97%);
 }
 :root{
-  --colorbotom1:rgb(213, 0, 0);
+  --colorbotom1:rgb(178, 173, 173);
   --colorbotom2:rgb(0, 100, 90);
 }
-header > h1 {
-  font-family: 'Quicksand', sans-serif;
-  text-align: center;
-  border-bottom: 1px solid;
-  margin-right: 10vh;
-  margin-left: 10vh;
-  padding-bottom: 1vh;
+
+body{
+  margin: 5px;
+  padding: 50px;
+  border: 1px solid;
+  font-family: 'Bebas Neue', sans-serif;  
+}
+
+header{
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  padding: 5px;
+  border-radius: 16px;
+}
+header .logoContent{
+  cursor: pointer;
+}
+
+header .logoContent #logoId{
+  width:80px;
+  height:80px;
+  border-radius: 50%;
 }
 
 header > .barraNav{
   display: flex;
-  padding: 3vh;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1vh;
+  margin-right: 8%;
+  width: 80%;
 }
 header > .barraNav> a {
   text-decoration: none;
-  border: 1px solid;
+  text-transform: none;
+  color: aliceblue;
+  border-bottom: 1px solid rgb(255, 255, 255);
   border-radius: 12%;
-  padding: 1vh;
   background-color: var(--colorbotom1);
+  padding: 1vh;
 }
 
 header > .barraNav> a:hover {
-  background-color: var(--colorbotom2);
+  border-color: rgb(71, 226, 9);
+
 }
 
-body{
-  font-family: 'Bebas Neue', sans-serif;
+main{
+  padding: 30px;
 }
 
 #sect1{
@@ -44,6 +67,14 @@ body{
   height: 100vh;
   padding: 4vh;
   margin-bottom: 12vh;
+  border: 1px solid;
+  border-radius: 16px;
+  background: url("images/fondoPortfolio.jpg");
+  z-index: 1;
+  background-attachment:fixed;
+  background-position: center;
+  background-size:contain;
+  background-repeat: no-repeat;
 }
 
 #sect1 > .fotoContent {  
@@ -62,23 +93,27 @@ body{
 #sect2{
   width: 100%;
   padding: 4vh;
-  background: url("images/fondo2.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
   margin-top: 12vh;
-  border-radius: 1%;
+  border: 1px solid;
+  border-radius: 16px;
+  background: url("images/fondoPortfolio.jpg");
+  background-attachment:fixed;
+  background-position: center;
+  background-size:contain;
+  background-repeat: no-repeat;
 }
 
 #sect3{
   margin-top: 12vh;
   width: 100%;
   padding: 4vh;
-  background: url("images/fondo3.jpg");
-  background-attachment: fixed;
+  border: 1px solid;
+  border-radius: 16px;
+  background: url("images/fondoPortfolio.jpg");
+  background-attachment:fixed;
   background-position: center;
-  background-size: cover;
-  border-radius: 1%;
+  background-size:contain;
+  background-repeat: no-repeat;
 }
 .sectBck > h2 {
   background: none;
@@ -88,16 +123,31 @@ body{
   height: 100vh;
   margin-top: 12vh;
   padding: 4vh;
+  border: 1px solid;
+  border-radius: 16px;
+  background: url("images/fondoPortfolio.jpg");
+  background-attachment:fixed;
+  background-position: center;
+  background-size:contain;
+  background-repeat: no-repeat;
 }
 #sect4 > form{
   display: flex;
   flex-direction: column;
   width: 30%;
 }
+footer{
+  display: flex;
+  justify-content: center;
+  border: 1px solid;
+  align-items: center;
+  border-radius: 16px;
+  height: 90px;
+}
 footer>.contactContent{
   display: flex;
-  padding: 4vh;
-  width: 70%;
   justify-content: space-around;
-  border: 1px solid;
+  width: 70%;
+  align-items: center;
+  padding: 2vh;
 }
